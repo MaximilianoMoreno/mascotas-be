@@ -7,7 +7,7 @@ module.exports = {
         description: 'Web server for GMG',
         keywords: ''
     },
-    db: 'mongodb://admin:gmgadmin@ds119456-a0.mlab.com:19456,ds119456-a1.mlab.com:19456/gmg-db?replicaSet=rs-ds119456',
+    db: 'mongodb://root:!mascotas1@ds129098.mlab.com:29098/mascotas',
     templateEngine: 'swig',
 
     assets: {
