@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guía Mendoza Gourmet</title>
+
+<style type="text/css">
+	body {
+		font-family: Roboto, sans-serif;
+		font-size: 14px;
+		color: #666666;
+	}
+	p {
+		line-height: 21px;
+	}
+	a {
+	    color: #f8981d;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
+	.nombrereserva {
+		border: 0;
+	    border-spacing: 0;
+	    color: #666666;
+	    font-size: 26px;
+	    font-weight: bold;
+	    
+	}
+	.nombrenegocio {
+	    font-weight: bold;
+	    font-size: 22px;
+	}
+	.datosnegocio {
+
+	}
+	.infoincorrecta {
+		font-size: 16px;
+    	text-align: center;
+	}
+
+	.infoimportante {
+		font-size: 14px;
+    	text-align: center;
+	}
+	.etiquetadescuento {
+	    text-align: center;
+	    background: #f8981d;
+	    font-size: 1.4em;
+	    padding: 3% 10%;
+	    font-weight: 400;
+	    color: #fff;
+	    border-radius: 5px;
+	    margin: 0 auto;
+	}
+	.iconosinfo {
+		vertical-align: middle;
+	    margin-right: 3%;
+	    margin-top: -2%;
+	}
+	.redesociales {
+		margin: 0 2%;
+	}
+	.imagenmail {
+		object-fit: cover;
+	    object-position: center;
+	    height: 295px;
+	    width: 600px;
+	}
+	.faltas {
+		list-style: none;
+		line-height: 31px;
+    	font-size: 18px;
+    	padding: 0 15%;
+	}
+	.politica {
+		font-weight: bold;
+		font-size: 24px;
+		text-align: center;
+	}
+	.fondopoliticas {
+		padding-top: 20px;
+		padding-bottom: 5px;
+		border-top: 4px solid #f8981d;
+	}
+
+</style>
+
+</head>
+
+<body>
+	<table style="margin: 0 auto;" width="600" border="0" cellspacing="0" cellpadding="0">
+		<tbody>
+			<tr>
+				<td colspan="2" style="text-align: center; height: 85px; background: #ffff00;">
+					<img src="https://guiamendozagourmet.com/lacocina/templates/usuario/logo-gmg.png">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center; padding: 5% 0; border-bottom: 0px solid #d9d9d9;">
+					<span class="nombrereserva">{{nombreUsuario}}, nos avisaron que faltaste a tu reserva.</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img class="imagenmail" src="https://guiamendozagourmet.com/lacocina/templates/usuario/novino-v3.jpg">
+				</td>
+			</tr>
+			<tr >
+				<td style="padding: 2%;">
+					<span class="nombrenegocio">{{nombreLocal}}</span><br>
+					<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/usuario/ico-check.png"> Reserva para {{cubiertosReservados}} persona/s el día {{fechaReserva}} a las {{horaReserva}} hs.</p>
+					<span class="datosnegocio">
+						<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/usuario/ico-map.png"><a target="_blank">{{direccionLocal}}</a></p>
+						<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/usuario/ico-phone.png">{{telefonoLocal}}</p>
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="fondopoliticas" colspan="2">
+					<div class="politica">POLÍTICA DE FALTAS*</div>
+					<ul class="faltas">
+						<li><strong>1º Falta:</strong> Aviso.</li>
+						<li><strong>2º Falta:</strong> Suspensión de la cuenta por 30 días.</li>
+						<li><strong>3º Falta:</strong> Suspensión definitiva de la cuenta.</li>
+					</ul>
+					<p class="infoimportante">*Faltas cometidas en un plazo de 12 meses.</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p class="infoincorrecta">Si creés que esta información no es correcta, por favor, <br>comunicate con nosotros a <strong>soporte@guiamendozagourmet.com</strong></p>
+				</td>
+			</tr>
+
+			<tr style="background: #ffff00; height: 50px;">
+				<td colspan="2"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center; background: #ffff00;">
+					<a target="_blank" href="https://twitter.com/guiamendozagour"><img class="redesociales" src="https://guiamendozagourmet.com/lacocina/templates/usuario/rs1.png"></a>
+					<a target="_blank" href="https://www.facebook.com/guiamendozagourmet"><img class="redesociales" src="https://guiamendozagourmet.com/lacocina/templates/usuario/rs2.png"></a>
+					<a target="_blank" href="https://www.instagram.com/guiamendozagourmet"><img class="redesociales" src="https://guiamendozagourmet.com/lacocina/templates/usuario/rs3.png"></a>
+					<p><a style="color: #000;" target="_blank" href="http://guiamendozagourmet.com">www.guiamendozagourmet.com</a></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

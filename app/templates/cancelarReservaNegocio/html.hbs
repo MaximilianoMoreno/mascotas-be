@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guía Mendoza Gourmet</title>
+
+<style type="text/css">
+	body {
+		font-family: Roboto, sans-serif;
+		font-size: 14px;
+		color: #666666;
+	}
+	p {
+		line-height: 21px;
+	}
+	a {
+	    color: #f8981d;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
+	.nombrereserva {
+		border: 0;
+	    border-spacing: 0;
+	    color: #666666;
+	    font-size: 26px;
+	    font-weight: bold;
+	    
+	}
+	.nombrenegocio {
+	    font-weight: bold;
+	    font-size: 22px;
+	}
+	.datosnegocio {
+
+	}
+	.infodescuento {
+		font-size: 12px;
+    	text-align: center;
+	}
+	.etiquetadescuento {
+	    text-align: center;
+	    background: #ffff00;
+	    font-size: 1.4em;
+	    padding: 3% 10%;
+	    font-weight: 400;
+	    color: #000;
+	    border-radius: 5px;
+	    margin: 0 auto;
+	}
+	.iconosinfo {
+		vertical-align: middle;
+	    margin-right: 3%;
+	    margin-top: -2%;
+	}
+	.redesociales {
+		margin: 0 2%;
+	}
+	.imagenmail {
+		object-fit: cover;
+	    object-position: center;
+	    height: 295px;
+	    width: 600px;
+	}
+</style>
+
+</head>
+
+<body>
+	<table style="margin: 0 auto;" width="600" border="0" cellspacing="0" cellpadding="0">
+		<tbody>
+			<tr>
+				<td colspan="2" style="text-align: center; height: 85px; background: #000;">
+					<img src="https://guiamendozagourmet.com/lacocina/templates/cliente/logo-gmg.png">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center; padding: 5% 0; border-bottom: 0px solid #d9d9d9;">
+					<span class="nombrereserva">Una reserva ha sido cancelada.</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img class="imagenmail" src="{{fotoLocal}}">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="padding: 2%; border-bottom: 2px solid #d9d9d9;">
+					<span class="nombrenegocio">Datos de contacto</span><br>
+					<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/cliente/ico-user.png">{{nombreApellidoReserva}}</p>
+					<span class="datosnegocio">
+						<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/cliente/ico-mail.png"><a target="_blank" href="#">{{mailReserva}}</a></p>
+						<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/cliente/ico-phone.png">{{telefonoReserva}}</p>
+					</span>
+				</td>
+				
+			</tr>
+			<tr >
+				<td colspan="2" style="padding: 2%;">
+					<!-- <p style="text-align: center; font-size: 1.6em; line-height: 1.4em;">Gracias por tomarte el tiempo de avisarnos y darle la posibilidad a otra persona de reservar.</p> -->
+
+					<p style="text-align: center;">Detalle de la reserva cancelada:</p>
+					<span class="nombrenegocio">{{nombreLocal}}</span><br>
+					<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/cliente/ico-check.png"> Reserva para {{cubiertosReservados}} persona/s el día {{fechaReserva}} a las {{horaReserva}} hs.</p>
+					<span class="datosnegocio">
+						<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/cliente/ico-map.png"><a target="_blank" href="#">{{direccionLocal}}</a></p>
+						<p><img class="iconosinfo" src="https://guiamendozagourmet.com/lacocina/templates/cliente/ico-phone.png">{{telefonoLocal}}</p>
+					</span>
+				</td>
+				
+			</tr>
+			
+			<tr>
+				<td colspan="2" style="border-top: 2px solid #d9d9d9; padding-top: 2%; text-align: center; background: #000;">
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center; background: #000;">
+					<a target="_blank" href="https://twitter.com/guiamendozagour"><img class="redesociales" src="https://guiamendozagourmet.com/lacocina/templates/cliente/rs1.png"></a>
+					<a target="_blank" href="https://www.facebook.com/guiamendozagourmet"><img class="redesociales" src="https://guiamendozagourmet.com/lacocina/templates/cliente/rs2.png"></a>
+					<a target="_blank" href="https://www.instagram.com/guiamendozagourmet"><img class="redesociales" src="https://guiamendozagourmet.com/lacocina/templates/cliente/rs3.png"></a>
+					<p><a style="color: #fff;" target="_blank" href="http://guiamendozagourmet.com">www.guiamendozagourmet.com</a></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
+
+
+
+
