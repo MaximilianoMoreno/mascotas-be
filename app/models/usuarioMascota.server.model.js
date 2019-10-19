@@ -81,7 +81,7 @@ UsuarioSchema.statics.upsertFbUser = function(accessToken, profile, cb) {
 					id: profile.id,
 					token: accessToken
 				},
-				tipoUsuario : "usuarioReserva",
+				tipoUsuario : "usuarioMascotas",
 				sexoUsuario : profile.gender,
 				hash_password : bcrypt.hashSync(profile.id, 10)
 			});
