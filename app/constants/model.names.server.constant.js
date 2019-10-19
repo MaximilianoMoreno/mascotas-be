@@ -10,3 +10,4 @@
 exports.LED = 'Led';
 exports.USUARIO_MASCOTA = 'UsuarioMascota';
 exports.MASCOTA = 'Mascota';
+exports.PASEADOR = 'Paseador';

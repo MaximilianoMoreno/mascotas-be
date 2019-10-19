@@ -75,7 +75,7 @@ function create(req, modelo) {
     });
     console.log(query);
     var promise = new Promise(function(resolve, reject) {
-      Modelo.findOneAndUpdate({ _id: req.query.id }, query, function (err, modeloActualizado){
+      Modelo.findOneAndUpdate({ _id: req.params.id }, query, function (err, modeloActualizado){
         if (err) {
           reject(err);
         } else {

@@ -14,5 +14,4 @@ function init(app) {
 	app.route('/api-mascotas/actualizarUsuario').put(controller.loginRequired, controller.update);
 	app.route('/api-mascotas/usuario').delete(controller.remove);
 
-	app.param('id', controller.getById);
 }

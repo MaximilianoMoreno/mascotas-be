@@ -11,8 +11,8 @@
   require('bluebird').promisifyAll(mongoose);
 
   var controller = {
-    "listarMascotas": listarMascotas,
-    "listarMascotasPorId": listarMascotasPorId,
+    "listarPaseador": listarPaseador,
+    "listarPaseadorPorId": listarPaseadorPorId,
     "crearPaseador": create,
     "remove": remove,
     "update": update
@@ -20,24 +20,24 @@
 
   module.exports = controller;
 
-  function listarMascotas(req, res) {
-      crudTools.find(req, MODEL_NAMES.MASCOTA).then(function (listadoMascotas){
-          res.status(200).jsonp(listadoMascotas);
+  function listarPaseador(req, res) {
+      crudTools.find(req, MODEL_NAMES.PASEADOR).then(function (listadoPaseadores){
+          res.status(200).jsonp(listadoPaseadores);
       }).catch(function (err){
           res.status(404).jsonp(err);
       });
   }
-  function listarMascotasPorId(req, res) {
-      crudTools.find(req, MODEL_NAMES.MASCOTA).then(function (listadoMascotas){
-          res.status(200).jsonp(listadoMascotas);
+  function listarPaseadorPorId(req, res) {
+      crudTools.find(req, MODEL_NAMES.PASEADOR).then(function (detallePaseador){
+          res.status(200).jsonp(detallePaseador);
       }).catch(function (err){
           res.status(404).jsonp(err);
       });
   }
 
   function create(req, res) {
-    crudTools.create(req, MODEL_NAMES.MASCOTA).then(function (nuevaMascota){
-      res.status(200).jsonp(nuevaMascota);
+    crudTools.create(req, MODEL_NAMES.PASEADOR).then(function (nuevoPaseador){
+      res.status(200).jsonp(nuevoPaseador);
     }).catch(function (err){
       res.status(404).jsonp(err);
     });
