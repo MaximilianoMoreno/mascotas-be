@@ -41,7 +41,7 @@
     "email-templates-v2": "^2.0.3",
     "express": "~4.10.1",
     "glob": "~7.0.3",
-    "grunt": "~1.0.1",
+    "grunt": "~1.5.2",
     "grunt-cli": "~1.2.0",
     "grunt-concurrent": "~2.3.0",
     "grunt-contrib-csslint": "~1.0.0",
