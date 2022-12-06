@@ -39,7 +39,7 @@
     "ejs": "^2.5.7",
     "email-templates": "^2.7.1",
     "email-templates-v2": "^2.0.3",
-    "express": "~4.10.1",
+    "express": "~4.17.3",
     "glob": "~7.0.3",
     "grunt": "~1.0.1",
     "grunt-cli": "~1.2.0",
